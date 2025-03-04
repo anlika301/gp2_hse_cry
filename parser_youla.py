@@ -1,3 +1,40 @@
+def get_content_page(html, collected_links):
+    """Сбор данных с текущей страницы."""
+    soup = BeautifulSoup(html, 'html.parser')
+    blocks = soup.find_all('div', {"data-test-component": "ProductOrAdCard"})
+    data_list = []
+
+    for block in blocks:
+        try:
+            name = block.find('span', {'data-test-block': "ProductName"}).text.strip()
+        except:
+            name = 'нет названия'
+            
+        try:
+            city = block.find('div', {'data-test-component': "Badges"}).text.split('%')[-1].strip()
+        except:
+            city = 'город не указан'
+
+        try:
+            price = block.find('p', {'data-test-block': "ProductPrice"}).text.replace('₽руб.', '').replace('\xa0', '').strip()
+        except:
+            price = 'нет цены'
+        try:
+             link = "https://youla.ru" + block.find('div').find('span').find('a').get('href')
+        except:
+            link = 'ссылка не найдена'
+
+        if link not in collected_links and name != 'нет названия':
+            collected_links.add(link)
+            data_list.append({
+                'name': name,
+                'city': city,
+                'price': price,
+                'link': link
+            })
+
+    return data_list
+    
 def parser(url, data_list_count=1000):
 
     browser = webdriver.Chrome(options=chrome_options)
