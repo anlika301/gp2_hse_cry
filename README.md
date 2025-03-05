@@ -36,5 +36,7 @@
 Ссылка на раздел проекта с извлечением данных с сайта Дром: [Дром](https://github.com/anlika301/gp2_hse_cry/tree/f8a202092061dfff0bc86376291e9fe6a3358b93/data%20collection%20of%20drom).
 
 ## **7. Первичная обработка данных (EDA)**
+[Ссылка  на EDA](https://github.com/anlika301/gp2_hse_cry/blob/fa296b1864574ae75ee50b55f6c0cdc999a572df/eda_analys.ipynb)
 
 ## **8. Агрегация результатов. Выводы**
+[Ссылка  на иследование](https://github.com/anlika301/gp2_hse_cry/blob/fa296b1864574ae75ee50b55f6c0cdc999a572df/%D0%93%D0%9F%202.pptx)
