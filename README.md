@@ -23,9 +23,10 @@
 ## **3. Выбор источников данных и методологии их сбора**
 
 ## **4. Извлечение данных с сайта _youla.ru_ с помощью библиотеки Selenium**
-Ссылка на раздел извлечения данных с сайта Юла: [Link Text](#this-heading-is-not-unique-in-the-file).
+Ссылка на раздел с извлечением данных с сайта Юла: [Юла](https://github.com/anlika301/gp2_hse_cry/blob/150f5ab11185887746e4a45c72036f2d354f2786/data%20collection%20of%20youla/README.md).
 
 ## **5. Извлечение данных с сайта _drom.ru_ с помощью библиотеки Selenium**
+Ссылка на раздел с извлечением данных с сайта Дром: [Дром](https://github.com/anlika301/gp2_hse_cry/blob/150f5ab11185887746e4a45c72036f2d354f2786/data%20collection%20of%20youla/README.md).
 
 ## **6. Первичная обработка данных (EDA)**
 
